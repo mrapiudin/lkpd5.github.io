@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>rapi like a rain</h1>
+    <script>
+        for(let hujan = 1; hujan <= 50; hujan++) {
+            console.log(hujan)
+        }
+
+        let wortel = 1; 
+        while (wortel < 50) {
+            if (wortel % 2 == 1) {
+                console.log(wortel + ' ganjil')
+            } wortel++;
+        }
+
+        let duren = 1; 
+        while (duren < 50) {
+            if (duren % 2 ==0) {
+                console.log(duren + ' genap')
+            } duren++; 
+        }
+
+        let ikan = 1; 
+        while (ikan <= 50) {
+            
+            if (ikan % 2 ==0) {
+                console.log(ikan + ' genap')
+            } else {
+                console.log(ikan + ' ganjil')
+            } ikan++;
+        }
+
+        let awal = 0;
+        let total = 0;
+        let angkaTerkecil = 99999999999999999999;
+        let angkaTerbesar = -99999999999999999999;
+
+        while (awal < 20) {
+            let input = prompt('masukan angka ' + (awal + 1));
+            if (!isNaN(input)) {
+                let angka = parseFloat(input);
+                angkaTerkecil = Math.min(angkaTerkecil, angka);
+                angkaTerbesar = Math.max(angkaTerbesar, angka);
+                total = total + angka;
+                awal++;
+            } else {
+                alert("HARUSS ANGKAAA YAA!!!");
+            }
+        }
+
+        let average = total / 20;
+        console.log("bilangan terkecil dari angka yang anda masukan adalah " + angkaTerkecil)
+        console.log("bilangan terbesar dari angka yang anda masukan adalah " + angkaTerbesar)
+        console.log("Rata rata nya " + average)
+        
+
+    </script>
+</body>
+</html>
